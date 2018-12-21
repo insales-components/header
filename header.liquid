@@ -1,0 +1,16 @@
+<header class="main-header">
+  <div class="container">
+    <div class="row flex-middle">
+      <div class="cell-6">
+        {%- include "logo" -%}
+      </div>
+      <div class="cell-6 text-right">
+        <a href="/cart_items" class="cart-widget-link">
+          Корзина <span data-positions-count></span>
+        </a>
+      </div>
+    </div>
+
+    {% include "menu", menu_class: 'main-menu', source_type: 'collection', source_handle: 'all', show_icon: false, level_limit: 2, drop_menu: true, menu_ul_class: 'row flex-between' %}
+  </div>
+</header>
